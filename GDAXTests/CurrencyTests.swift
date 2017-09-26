@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 import Moya
 
-@testable import GDAXBar
+@testable import GDAX
 class CurrencyTests: XCTestCase {
 
     var provider: OnlineProvider<GDAXService>!
@@ -22,7 +22,7 @@ class CurrencyTests: XCTestCase {
     func test_decoding() {
         let decoder = JSONDecoder()
         let dataRetreivalExpectation = expectation(description: "received data")
-        provider.request(.currencies) { result in
+        _ = provider.request(.currencies) { result in
             if case let .success(response) = result {
                 let currencies = try? decoder.decode([Currency].self, from: response.data)
                 XCTAssertNotNil(currencies)
@@ -32,5 +32,10 @@ class CurrencyTests: XCTestCase {
         }
 
         waitForExpectations(timeout: 1.0, handler: nil)
+    }
+
+    func test_smallestDenomination() {
+        let currency = Currency(id: "BHD", name: "Bahraini Dinar", smallestDenomination: "0.001")
+        XCTAssertEqual(Double(currency._smallestDenomination), currency.smallestDenomination)
     }
 }

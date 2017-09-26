@@ -4,10 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GDAX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>GDAXBar.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>0</integer>
+		</dict>
+		<key>GDAXTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DC54CFC81F7A3092004D04D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC54CFDB1F7A31F0004D04D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCF8138C1F7A165F004C1424</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCF8139E1F7A165F004C1424</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

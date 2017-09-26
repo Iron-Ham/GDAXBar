@@ -9,12 +9,11 @@
 import Foundation
 import Moya
 
-class OnlineProvider<Target> where Target: Moya.TargetType {
+public class OnlineProvider<Target> where Target: Moya.TargetType {
 
     fileprivate let provider: MoyaProvider<Target>
 
-
-    init(
+    public init(
         endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = MoyaProvider.defaultEndpointMapping,
         requestClosure: @escaping MoyaProvider<Target>.RequestClosure = MoyaProvider.defaultRequestMapping,
         stubClosure: @escaping MoyaProvider<Target>.StubClosure = MoyaProvider.neverStub,

@@ -7,22 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24259B34FE8C18A6AAD9BDD2 /* Pods_GDAX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B497E7F332D6003AC5531B /* Pods_GDAX.framework */; };
+		913A54F49B4EC192AB1934BB /* Pods_GDAXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568AF8F9841EF4715AF5C32 /* Pods_GDAXTests.framework */; };
 		957ECFE1A0F316387A5AF64B /* Pods_GDAXBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */; };
 		C12C68413DA35578DFF0413D /* Pods_GDAXBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBA89BA6FB4F7523A15B132 /* Pods_GDAXBar.framework */; };
-		DC54CFBE1F7A236E004D04D0 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */; };
-		DC54CFBF1F7A25FF004D04D0 /* Currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF813B21F7A19B1004C1424 /* Currencies.json */; };
+		DC54CFCC1F7A3093004D04D0 /* GDAX.h in Headers */ = {isa = PBXBuildFile; fileRef = DC54CFCB1F7A3093004D04D0 /* GDAX.h */; };
+		DC54CFCE1F7A3093004D04D0 /* GDAX.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFCD1F7A3093004D04D0 /* GDAX.m */; };
+		DC54CFD21F7A30AB004D04D0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B61F7A1BBA004C1424 /* Currency.swift */; };
+		DC54CFD31F7A30B4004D04D0 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B91F7A1E04004C1424 /* CurrencyService.swift */; };
+		DC54CFD41F7A30B9004D04D0 /* CurrencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFC31F7A300F004D04D0 /* CurrencyStore.swift */; };
+		DC54CFD51F7A30DE004D04D0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFC11F7A2F98004D04D0 /* Product.swift */; };
+		DC54CFD61F7A3188004D04D0 /* GDAXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813AF1F7A16F4004C1424 /* GDAXService.swift */; };
+		DC54CFD71F7A318B004D04D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B41F7A1AF5004C1424 /* Networking.swift */; };
+		DC54CFDF1F7A31F0004D04D0 /* GDAXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */; };
+		DC54CFE11F7A31F0004D04D0 /* libGDAX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC54CFC91F7A3092004D04D0 /* libGDAX.dylib */; };
+		DC54CFE71F7A31F6004D04D0 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */; };
+		DC54CFEC1F7A34DB004D04D0 /* Currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF813B21F7A19B1004C1424 /* Currencies.json */; };
 		DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813901F7A165F004C1424 /* AppDelegate.swift */; };
 		DCF813931F7A165F004C1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* ViewController.swift */; };
 		DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF813941F7A165F004C1424 /* Assets.xcassets */; };
 		DCF813981F7A165F004C1424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF813961F7A165F004C1424 /* Main.storyboard */; };
 		DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */; };
-		DCF813B01F7A16F4004C1424 /* GDAXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813AF1F7A16F4004C1424 /* GDAXService.swift */; };
-		DCF813B51F7A1AF5004C1424 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B41F7A1AF5004C1424 /* Networking.swift */; };
-		DCF813B71F7A1BBA004C1424 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B61F7A1BBA004C1424 /* Currency.swift */; };
-		DCF813BA1F7A1E04004C1424 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B91F7A1E04004C1424 /* CurrencyService.swift */; };
+		DCFB7FB91F7A380300062C9F /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7FB81F7A380300062C9F /* UserDefaultKeys.swift */; };
+		DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7FBA1F7A399200062C9F /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DC54CFE21F7A31F0004D04D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF813851F7A165F004C1424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC54CFC81F7A3092004D04D0;
+			remoteInfo = GDAX;
+		};
 		DCF813A01F7A165F004C1424 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCF813851F7A165F004C1424 /* Project object */;
@@ -33,13 +50,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15B497E7F332D6003AC5531B /* Pods_GDAX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E90C115B50590B44960C98 /* Pods-GDAX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAX/Pods-GDAX.debug.xcconfig"; sourceTree = "<group>"; };
 		2215B9FD77422BAF4E01DD85 /* Pods-GDAXBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar.release.xcconfig"; sourceTree = "<group>"; };
 		2F159AD0F75B421E82111582 /* Pods-GDAXBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.release.xcconfig"; sourceTree = "<group>"; };
 		51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAXBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D73F7B97FEAD5A4D116E337 /* Pods-GDAXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXTests/Pods-GDAXTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E51BA8AA6DAEE32EB29701F /* Pods-GDAXBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F835BE68A267A5B5A06C5FD /* Pods-GDAX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAX.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAX/Pods-GDAX.release.xcconfig"; sourceTree = "<group>"; };
+		A568AF8F9841EF4715AF5C32 /* Pods_GDAXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1C884072D6A855721CE9F6 /* Pods-GDAXBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar.debug.xcconfig"; sourceTree = "<group>"; };
+		C631B478584BEEE573E33646 /* Pods-GDAXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXTests/Pods-GDAXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFBA89BA6FB4F7523A15B132 /* Pods_GDAXBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAXBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
+		DC54CFC11F7A2F98004D04D0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DC54CFC31F7A300F004D04D0 /* CurrencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStore.swift; sourceTree = "<group>"; };
+		DC54CFC91F7A3092004D04D0 /* libGDAX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libGDAX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC54CFCB1F7A3093004D04D0 /* GDAX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDAX.h; sourceTree = "<group>"; };
+		DC54CFCD1F7A3093004D04D0 /* GDAX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDAX.m; sourceTree = "<group>"; };
+		DC54CFDC1F7A31F0004D04D0 /* GDAXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDAXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDAXTests.swift; sourceTree = "<group>"; };
+		DC54CFE01F7A31F0004D04D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF8138D1F7A165F004C1424 /* GDAXBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF813901F7A165F004C1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF813921F7A165F004C1424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +86,28 @@
 		DCF813B41F7A1AF5004C1424 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DCF813B61F7A1BBA004C1424 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		DCF813B91F7A1E04004C1424 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		DCFB7FB81F7A380300062C9F /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		DCFB7FBA1F7A399200062C9F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC54CFC61F7A3092004D04D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24259B34FE8C18A6AAD9BDD2 /* Pods_GDAX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC54CFD91F7A31F0004D04D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC54CFE11F7A31F0004D04D0 /* libGDAX.dylib in Frameworks */,
+				913A54F49B4EC192AB1934BB /* Pods_GDAXTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF8138A1F7A165F004C1424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +134,10 @@
 				2215B9FD77422BAF4E01DD85 /* Pods-GDAXBar.release.xcconfig */,
 				9E51BA8AA6DAEE32EB29701F /* Pods-GDAXBarTests.debug.xcconfig */,
 				2F159AD0F75B421E82111582 /* Pods-GDAXBarTests.release.xcconfig */,
+				17E90C115B50590B44960C98 /* Pods-GDAX.debug.xcconfig */,
+				9F835BE68A267A5B5A06C5FD /* Pods-GDAX.release.xcconfig */,
+				C631B478584BEEE573E33646 /* Pods-GDAXTests.debug.xcconfig */,
+				6D73F7B97FEAD5A4D116E337 /* Pods-GDAXTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -93,16 +147,51 @@
 			children = (
 				CFBA89BA6FB4F7523A15B132 /* Pods_GDAXBar.framework */,
 				51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */,
+				15B497E7F332D6003AC5531B /* Pods_GDAX.framework */,
+				A568AF8F9841EF4715AF5C32 /* Pods_GDAXTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC54CFC01F7A2F83004D04D0 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				DC54CFC11F7A2F98004D04D0 /* Product.swift */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		DC54CFCA1F7A3093004D04D0 /* GDAX */ = {
+			isa = PBXGroup;
+			children = (
+				DCFB7FB71F7A37F800062C9F /* Utility */,
+				DCF813AE1F7A16A1004C1424 /* Networking */,
+				DC54CFC01F7A2F83004D04D0 /* Exchanges */,
+				DCF813B81F7A1DEB004C1424 /* Currency */,
+				DC54CFCB1F7A3093004D04D0 /* GDAX.h */,
+				DC54CFCD1F7A3093004D04D0 /* GDAX.m */,
+			);
+			path = GDAX;
+			sourceTree = "<group>";
+		};
+		DC54CFDD1F7A31F0004D04D0 /* GDAXTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCF813B11F7A1906004C1424 /* Networking Stubs */,
+				DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */,
+				DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */,
+				DC54CFE01F7A31F0004D04D0 /* Info.plist */,
+			);
+			path = GDAXTests;
 			sourceTree = "<group>";
 		};
 		DCF813841F7A165F004C1424 = {
 			isa = PBXGroup;
 			children = (
-				DCF813B11F7A1906004C1424 /* Networking Stubs */,
 				DCF8138F1F7A165F004C1424 /* GDAXBar */,
 				DCF813A21F7A165F004C1424 /* GDAXBarTests */,
+				DC54CFCA1F7A3093004D04D0 /* GDAX */,
+				DC54CFDD1F7A31F0004D04D0 /* GDAXTests */,
 				DCF8138E1F7A165F004C1424 /* Products */,
 				985086996FC535C968A30E02 /* Pods */,
 				B05FD9A1514B661060DFA1A3 /* Frameworks */,
@@ -114,6 +203,8 @@
 			children = (
 				DCF8138D1F7A165F004C1424 /* GDAXBar.app */,
 				DCF8139F1F7A165F004C1424 /* GDAXBarTests.xctest */,
+				DC54CFC91F7A3092004D04D0 /* libGDAX.dylib */,
+				DC54CFDC1F7A31F0004D04D0 /* GDAXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,14 +212,12 @@
 		DCF8138F1F7A165F004C1424 /* GDAXBar */ = {
 			isa = PBXGroup;
 			children = (
-				DCF813AE1F7A16A1004C1424 /* Networking */,
 				DCF813901F7A165F004C1424 /* AppDelegate.swift */,
 				DCF813921F7A165F004C1424 /* ViewController.swift */,
 				DCF813941F7A165F004C1424 /* Assets.xcassets */,
 				DCF813961F7A165F004C1424 /* Main.storyboard */,
 				DCF813991F7A165F004C1424 /* Info.plist */,
 				DCF8139A1F7A165F004C1424 /* GDAXBar.entitlements */,
-				DCF813B81F7A1DEB004C1424 /* Currency */,
 			);
 			path = GDAXBar;
 			sourceTree = "<group>";
@@ -138,7 +227,6 @@
 			children = (
 				DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */,
 				DCF813A51F7A165F004C1424 /* Info.plist */,
-				DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */,
 			);
 			path = GDAXBarTests;
 			sourceTree = "<group>";
@@ -163,15 +251,76 @@
 		DCF813B81F7A1DEB004C1424 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				DCF813B61F7A1BBA004C1424 /* Currency.swift */,
+				DC54CFC31F7A300F004D04D0 /* CurrencyStore.swift */,
 				DCF813B91F7A1E04004C1424 /* CurrencyService.swift */,
+				DCF813B61F7A1BBA004C1424 /* Currency.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
 		};
+		DCFB7FB71F7A37F800062C9F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCFB7FB81F7A380300062C9F /* UserDefaultKeys.swift */,
+				DCFB7FBA1F7A399200062C9F /* Store.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DC54CFC71F7A3092004D04D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC54CFCC1F7A3093004D04D0 /* GDAX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		DC54CFC81F7A3092004D04D0 /* GDAX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC54CFCF1F7A3093004D04D0 /* Build configuration list for PBXNativeTarget "GDAX" */;
+			buildPhases = (
+				E33E55DB79DED25EB7A647F9 /* [CP] Check Pods Manifest.lock */,
+				DC54CFC51F7A3092004D04D0 /* Sources */,
+				DC54CFC61F7A3092004D04D0 /* Frameworks */,
+				DC54CFC71F7A3092004D04D0 /* Headers */,
+				1A35E0C764067388B61AB5C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDAX;
+			productName = GDAX;
+			productReference = DC54CFC91F7A3092004D04D0 /* libGDAX.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DC54CFDB1F7A31F0004D04D0 /* GDAXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC54CFE61F7A31F0004D04D0 /* Build configuration list for PBXNativeTarget "GDAXTests" */;
+			buildPhases = (
+				95AA22F669D97CE747DA4D52 /* [CP] Check Pods Manifest.lock */,
+				DC54CFD81F7A31F0004D04D0 /* Sources */,
+				DC54CFD91F7A31F0004D04D0 /* Frameworks */,
+				DC54CFDA1F7A31F0004D04D0 /* Resources */,
+				63BE5855B43429D7CFD9AE01 /* [CP] Embed Pods Frameworks */,
+				0F0F7309BC0971B9E0688570 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC54CFE31F7A31F0004D04D0 /* PBXTargetDependency */,
+			);
+			name = GDAXTests;
+			productName = GDAXTests;
+			productReference = DC54CFDC1F7A31F0004D04D0 /* GDAXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DCF8138C1F7A165F004C1424 /* GDAXBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF813A81F7A165F004C1424 /* Build configuration list for PBXNativeTarget "GDAXBar" */;
@@ -223,6 +372,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Hesham Salman";
 				TargetAttributes = {
+					DC54CFC81F7A3092004D04D0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					DC54CFDB1F7A31F0004D04D0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					DCF8138C1F7A165F004C1424 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -249,18 +406,27 @@
 			targets = (
 				DCF8138C1F7A165F004C1424 /* GDAXBar */,
 				DCF8139E1F7A165F004C1424 /* GDAXBarTests */,
+				DC54CFC81F7A3092004D04D0 /* GDAX */,
+				DC54CFDB1F7A31F0004D04D0 /* GDAXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC54CFDA1F7A31F0004D04D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC54CFEC1F7A34DB004D04D0 /* Currencies.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF8138B1F7A165F004C1424 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */,
 				DCF813981F7A165F004C1424 /* Main.storyboard in Resources */,
-				DC54CFBF1F7A25FF004D04D0 /* Currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +453,58 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F0F7309BC0971B9E0688570 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXTests/Pods-GDAXTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A35E0C764067388B61AB5C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAX/Pods-GDAX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63BE5855B43429D7CFD9AE01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GDAXTests/Pods-GDAXTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXTests/Pods-GDAXTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7C054D5E93258BA1B4BB2AF9 /* [CP] Check Pods Manifest.lock */ = {
@@ -337,6 +555,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95AA22F669D97CE747DA4D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDAXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		95B4062C5C2AE2DA88163FE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,19 +613,58 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E33E55DB79DED25EB7A647F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDAX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC54CFC51F7A3092004D04D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFB7FB91F7A380300062C9F /* UserDefaultKeys.swift in Sources */,
+				DC54CFD21F7A30AB004D04D0 /* Currency.swift in Sources */,
+				DC54CFCE1F7A3093004D04D0 /* GDAX.m in Sources */,
+				DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */,
+				DC54CFD51F7A30DE004D04D0 /* Product.swift in Sources */,
+				DC54CFD41F7A30B9004D04D0 /* CurrencyStore.swift in Sources */,
+				DC54CFD31F7A30B4004D04D0 /* CurrencyService.swift in Sources */,
+				DC54CFD61F7A3188004D04D0 /* GDAXService.swift in Sources */,
+				DC54CFD71F7A318B004D04D0 /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC54CFD81F7A31F0004D04D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC54CFE71F7A31F6004D04D0 /* CurrencyTests.swift in Sources */,
+				DC54CFDF1F7A31F0004D04D0 /* GDAXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCF813891F7A165F004C1424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF813B01F7A16F4004C1424 /* GDAXService.swift in Sources */,
-				DCF813B71F7A1BBA004C1424 /* Currency.swift in Sources */,
-				DCF813BA1F7A1E04004C1424 /* CurrencyService.swift in Sources */,
 				DCF813931F7A165F004C1424 /* ViewController.swift in Sources */,
 				DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */,
-				DCF813B51F7A1AF5004C1424 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +672,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC54CFBE1F7A236E004D04D0 /* CurrencyTests.swift in Sources */,
 				DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +679,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DC54CFE31F7A31F0004D04D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC54CFC81F7A3092004D04D0 /* GDAX */;
+			targetProxy = DC54CFE21F7A31F0004D04D0 /* PBXContainerItemProxy */;
+		};
 		DCF813A11F7A165F004C1424 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DCF8138C1F7A165F004C1424 /* GDAXBar */;
@@ -424,6 +703,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC54CFD01F7A3093004D04D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E90C115B50590B44960C98 /* Pods-GDAX.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DC54CFD11F7A3093004D04D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F835BE68A267A5B5A06C5FD /* Pods-GDAX.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DC54CFE41F7A31F0004D04D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C631B478584BEEE573E33646 /* Pods-GDAXTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = GDAXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.GDAXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DC54CFE51F7A31F0004D04D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D73F7B97FEAD5A4D116E337 /* Pods-GDAXTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = GDAXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.GDAXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		DCF813A61F7A165F004C1424 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,7 +878,7 @@
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = GDAXBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GDAXBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.GDAXBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -558,7 +895,7 @@
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = GDAXBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GDAXBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.GDAXBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -603,6 +940,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC54CFCF1F7A3093004D04D0 /* Build configuration list for PBXNativeTarget "GDAX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC54CFD01F7A3093004D04D0 /* Debug */,
+				DC54CFD11F7A3093004D04D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC54CFE61F7A31F0004D04D0 /* Build configuration list for PBXNativeTarget "GDAXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC54CFE41F7A31F0004D04D0 /* Debug */,
+				DC54CFE51F7A31F0004D04D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCF813881F7A165F004C1424 /* Build configuration list for PBXProject "GDAXBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
