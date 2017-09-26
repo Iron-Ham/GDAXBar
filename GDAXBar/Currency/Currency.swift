@@ -9,14 +9,20 @@
 import Foundation
 import Moya
 
-struct Currency: Codable {
+struct Currency: Decodable {
     let id: String
     let name: String
-    let smallestDenomination: Double
+    private let _smallestDenomination: String
+    var smallestDenomination: Double {
+        guard let value = Double(self._smallestDenomination) else {
+            fatalError()
+        }
+        return value
+    }
 
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case smallestDenomination = "min_size"
+        case _smallestDenomination = "min_size"
     }
 }

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F0B42B02343EF03D967570B /* Pods_GDAXBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */; };
+		957ECFE1A0F316387A5AF64B /* Pods_GDAXBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */; };
 		C12C68413DA35578DFF0413D /* Pods_GDAXBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBA89BA6FB4F7523A15B132 /* Pods_GDAXBar.framework */; };
+		DC54CFBE1F7A236E004D04D0 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */; };
+		DC54CFBF1F7A25FF004D04D0 /* Currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF813B21F7A19B1004C1424 /* Currencies.json */; };
 		DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813901F7A165F004C1424 /* AppDelegate.swift */; };
 		DCF813931F7A165F004C1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* ViewController.swift */; };
 		DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF813941F7A165F004C1424 /* Assets.xcassets */; };
 		DCF813981F7A165F004C1424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF813961F7A165F004C1424 /* Main.storyboard */; };
 		DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */; };
 		DCF813B01F7A16F4004C1424 /* GDAXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813AF1F7A16F4004C1424 /* GDAXService.swift */; };
-		DCF813B31F7A19B1004C1424 /* Currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF813B21F7A19B1004C1424 /* Currencies.json */; };
 		DCF813B51F7A1AF5004C1424 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B41F7A1AF5004C1424 /* Networking.swift */; };
 		DCF813B71F7A1BBA004C1424 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B61F7A1BBA004C1424 /* Currency.swift */; };
 		DCF813BA1F7A1E04004C1424 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B91F7A1E04004C1424 /* CurrencyService.swift */; };
@@ -32,11 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21049C0E8B85BA4F5BFD08FD /* Pods-GDAXBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.release.xcconfig"; sourceTree = "<group>"; };
 		2215B9FD77422BAF4E01DD85 /* Pods-GDAXBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar.release.xcconfig"; sourceTree = "<group>"; };
+		2F159AD0F75B421E82111582 /* Pods-GDAXBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.release.xcconfig"; sourceTree = "<group>"; };
 		51435C7F483F389ABDBFDC10 /* Pods_GDAXBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAXBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E51BA8AA6DAEE32EB29701F /* Pods-GDAXBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1C884072D6A855721CE9F6 /* Pods-GDAXBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar.debug.xcconfig"; sourceTree = "<group>"; };
 		CFBA89BA6FB4F7523A15B132 /* Pods_GDAXBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDAXBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 		DCF8138D1F7A165F004C1424 /* GDAXBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF813901F7A165F004C1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF813921F7A165F004C1424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		DCF813B41F7A1AF5004C1424 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DCF813B61F7A1BBA004C1424 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		DCF813B91F7A1E04004C1424 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
-		E9BA9F7E156E5F5747BED90D /* Pods-GDAXBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0B42B02343EF03D967570B /* Pods_GDAXBarTests.framework in Frameworks */,
+				957ECFE1A0F316387A5AF64B /* Pods_GDAXBarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +82,8 @@
 			children = (
 				AF1C884072D6A855721CE9F6 /* Pods-GDAXBar.debug.xcconfig */,
 				2215B9FD77422BAF4E01DD85 /* Pods-GDAXBar.release.xcconfig */,
-				E9BA9F7E156E5F5747BED90D /* Pods-GDAXBarTests.debug.xcconfig */,
-				21049C0E8B85BA4F5BFD08FD /* Pods-GDAXBarTests.release.xcconfig */,
+				9E51BA8AA6DAEE32EB29701F /* Pods-GDAXBarTests.debug.xcconfig */,
+				2F159AD0F75B421E82111582 /* Pods-GDAXBarTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,6 +100,7 @@
 		DCF813841F7A165F004C1424 = {
 			isa = PBXGroup;
 			children = (
+				DCF813B11F7A1906004C1424 /* Networking Stubs */,
 				DCF8138F1F7A165F004C1424 /* GDAXBar */,
 				DCF813A21F7A165F004C1424 /* GDAXBarTests */,
 				DCF8138E1F7A165F004C1424 /* Products */,
@@ -133,9 +136,9 @@
 		DCF813A21F7A165F004C1424 /* GDAXBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				DCF813B11F7A1906004C1424 /* Stubs */,
 				DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */,
 				DCF813A51F7A165F004C1424 /* Info.plist */,
+				DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */,
 			);
 			path = GDAXBarTests;
 			sourceTree = "<group>";
@@ -149,12 +152,12 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		DCF813B11F7A1906004C1424 /* Stubs */ = {
+		DCF813B11F7A1906004C1424 /* Networking Stubs */ = {
 			isa = PBXGroup;
 			children = (
 				DCF813B21F7A19B1004C1424 /* Currencies.json */,
 			);
-			path = Stubs;
+			path = "Networking Stubs";
 			sourceTree = "<group>";
 		};
 		DCF813B81F7A1DEB004C1424 /* Currency */ = {
@@ -193,12 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF813AB1F7A165F004C1424 /* Build configuration list for PBXNativeTarget "GDAXBarTests" */;
 			buildPhases = (
-				D03C3C1BD5D25E4F158F4B16 /* [CP] Check Pods Manifest.lock */,
+				7C054D5E93258BA1B4BB2AF9 /* [CP] Check Pods Manifest.lock */,
 				DCF8139B1F7A165F004C1424 /* Sources */,
 				DCF8139C1F7A165F004C1424 /* Frameworks */,
 				DCF8139D1F7A165F004C1424 /* Resources */,
-				54BDF65AF84D18A61C683237 /* [CP] Embed Pods Frameworks */,
-				2D6A4DE9461B48DB8FDFDDE9 /* [CP] Copy Pods Resources */,
+				022D463280104AF609FD6506 /* [CP] Embed Pods Frameworks */,
+				90BDE5DED8A025DB0326BFB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +260,7 @@
 			files = (
 				DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */,
 				DCF813981F7A165F004C1424 /* Main.storyboard in Resources */,
+				DC54CFBF1F7A25FF004D04D0 /* Currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,46 +268,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF813B31F7A19B1004C1424 /* Currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D6A4DE9461B48DB8FDFDDE9 /* [CP] Copy Pods Resources */ = {
+		022D463280104AF609FD6506 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54BDF65AF84D18A61C683237 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C054D5E93258BA1B4BB2AF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDAXBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		88980C095BDC66B05CEB69C2 /* [CP] Copy Pods Resources */ = {
@@ -319,6 +320,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90BDE5DED8A025DB0326BFB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBarTests/Pods-GDAXBarTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95B4062C5C2AE2DA88163FE0 /* [CP] Check Pods Manifest.lock */ = {
@@ -361,24 +377,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDAXBar/Pods-GDAXBar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D03C3C1BD5D25E4F158F4B16 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GDAXBarTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -399,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC54CFBE1F7A236E004D04D0 /* CurrencyTests.swift in Sources */,
 				DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,7 +566,7 @@
 		};
 		DCF813AC1F7A165F004C1424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BA9F7E156E5F5747BED90D /* Pods-GDAXBarTests.debug.xcconfig */;
+			baseConfigurationReference = 9E51BA8AA6DAEE32EB29701F /* Pods-GDAXBarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,7 +584,7 @@
 		};
 		DCF813AD1F7A165F004C1424 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21049C0E8B85BA4F5BFD08FD /* Pods-GDAXBarTests.release.xcconfig */;
+			baseConfigurationReference = 2F159AD0F75B421E82111582 /* Pods-GDAXBarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

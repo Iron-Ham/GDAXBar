@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0B26D6740304AF2B80F94E0ECABB16F"
+               BlueprintIdentifier = "FBEAA51A09AC08C40B285C34257B053B"
                BuildableName = "Pods_GDAXBarTests.framework"
                BlueprintName = "Pods-GDAXBarTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0B26D6740304AF2B80F94E0ECABB16F"
+            BlueprintIdentifier = "FBEAA51A09AC08C40B285C34257B053B"
             BuildableName = "Pods_GDAXBarTests.framework"
             BlueprintName = "Pods-GDAXBarTests"
             ReferencedContainer = "container:Pods.xcodeproj">

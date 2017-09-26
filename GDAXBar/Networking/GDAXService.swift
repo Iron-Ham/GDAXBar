@@ -14,7 +14,7 @@ enum GDAXService {
 }
 
 extension GDAXService: TargetType {
-    var baseURL: URL { return URL(string: "https://gdax.com")! }
+    var baseURL: URL { return URL(string: "https://api.gdax.com")! }
     var path: String {
         switch self {
         case .currencies:

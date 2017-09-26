@@ -7,23 +7,31 @@
 //
 
 import Foundation
+import Result
 
-enum CurrencyService {
-
-    private var decoder: JSONDecoder {
-        return JSONDecoder()
-    }
-
-    static func fetch() -> [Currency]? {
+struct CurrencyService {
+    static func fetch(callback: @escaping ([Currency]?, NetworkingError?) -> Void) {
         let decoder = JSONDecoder()
         let provider = OnlineProvider<GDAXService>()
-        provider.request(.currencies) { result in
+        _ = provider.request(.currencies) { result in
             switch result {
             case let .success(response):
-                return try? decoder.decode(Currency.self, from: response.data)
+                let currencies = try? decoder.decode([Currency].self, from: response.data)
+                callback(currencies, nil)
+            case .failure(_):
+                callback(nil, NetworkingError.failedToFetch)
             }
         }
     }
 }
 
+enum NetworkingError: Error {
+    case failedToFetch
 
+    var localizedDescription: String {
+        switch self {
+        case .failedToFetch:
+            return "Failed to fetch data"
+        }
+    }
+}

@@ -24,4 +24,11 @@ class OnlineProvider<Target> where Target: Moya.TargetType {
         ) {
         self.provider = MoyaProvider(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, manager: manager, plugins: plugins, trackInflights: trackInflights)
     }
+
+    func request(_ target: Target,
+                 callbackQueue: DispatchQueue? = .none,
+                 progress: ProgressBlock? = .none,
+                 completion: @escaping Completion) -> Cancellable {
+        return provider.request(target, callbackQueue: callbackQueue, progress: progress, completion: completion)
+    }
 }
