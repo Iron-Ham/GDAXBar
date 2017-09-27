@@ -8,8 +8,12 @@
 
 import Foundation
 
-enum ProductService: Service {
+enum ProductService: MultiService {
     typealias T = Product
 
     static var defaultEndpoint: GDAXService = .products
+}
+
+enum ExampleService: Service {
+    typealias T = Int
 }

@@ -8,23 +8,35 @@
 
 import Foundation
 
-protocol Service {
-    associatedtype T: Codable
+typealias Service = SingleService & MultiService
 
+protocol BaseService {
     static var defaultEndpoint: GDAXService? { get }
+}
+
+extension BaseService {
+    static var defaultEndpoint: GDAXService? {
+        return nil
+    }
+}
+
+protocol MultiService: BaseService {
+    associatedtype T: Codable
 
     static func fetchValues(endpoint: GDAXService, callback: @escaping ([T]?, NetworkingError?) -> Void)
     static func fetchValues(callback: @escaping ([T]?, NetworkingError?) -> Void)
+}
+
+protocol SingleService: BaseService {
+    associatedtype T: Codable
+
+    static var defaultEndpoint: GDAXService? { get }
 
     static func fetchValue(endpoint: GDAXService, callback: @escaping (T?, NetworkingError?) -> Void)
     static func fetchValue(callback: @escaping (T?, NetworkingError?) -> Void)
 }
 
-extension Service {
-    static var defaultEndpoint: GDAXService? {
-        return nil
-    }
-
+extension SingleService {
     static func fetchValue(endpoint: GDAXService, callback: @escaping (T?, NetworkingError?) -> Void) {
         _ = provider.request(endpoint) { result in
             switch result {
@@ -40,7 +52,9 @@ extension Service {
         guard let endpoint = defaultEndpoint else { return }
         fetchValue(endpoint: endpoint, callback: callback)
     }
+}
 
+extension MultiService {
     static func fetchValues(endpoint: GDAXService, callback: @escaping ([T]?, NetworkingError?) -> Void) {
         _ = provider.request(endpoint) { result in
             switch result {
