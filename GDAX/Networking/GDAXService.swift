@@ -12,6 +12,7 @@ import Moya
 enum GDAXService {
     case currencies
     case products
+    case ticker(Product)
 }
 
 extension GDAXService: TargetType {
@@ -22,17 +23,19 @@ extension GDAXService: TargetType {
             return "/currencies"
         case .products:
             return "/products"
+        case let .ticker(product):
+            return "/products/\(product.id)/ticker"
         }
     }
     var method: Moya.Method {
         switch self {
-        case .currencies, .products:
+        default:
             return .get
         }
     }
     var task: Task {
         switch self {
-        case .currencies, .products:
+        default:
             return .requestPlain
         }
     }
@@ -42,6 +45,8 @@ extension GDAXService: TargetType {
             return stubbedResponse("Currencies")
         case .products:
             return stubbedResponse("Products")
+        case .ticker(_):
+            return stubbedResponse("Ticker")
         }
     }
 

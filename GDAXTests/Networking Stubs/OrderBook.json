@@ -1,0 +1,9 @@
+{
+    "sequence": "3",
+    "bids": [
+        [ price, size, num-orders ],
+    ],
+    "asks": [
+        [ price, size, num-orders ],
+    ]
+}

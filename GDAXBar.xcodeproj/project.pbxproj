@@ -26,6 +26,11 @@
 		DCE6130A1F7B2A5700275493 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613091F7B2A5700275493 /* ProductTests.swift */; };
 		DCE6130C1F7B2D9A00275493 /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE6130B1F7B2D9A00275493 /* ProductStore.swift */; };
 		DCE6130E1F7B302300275493 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE6130D1F7B302300275493 /* NetworkingError.swift */; };
+		DCE613101F7B323800275493 /* OrderBook.json in Resources */ = {isa = PBXBuildFile; fileRef = DCE6130F1F7B323800275493 /* OrderBook.json */; };
+		DCE613161F7B333F00275493 /* Ticker.json in Resources */ = {isa = PBXBuildFile; fileRef = DCE613151F7B333F00275493 /* Ticker.json */; };
+		DCE613191F7B33F000275493 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613181F7B33F000275493 /* Ticker.swift */; };
+		DCE6131E1F7B40E100275493 /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE6131D1F7B40E100275493 /* TickerService.swift */; };
+		DCE613221F7B442800275493 /* TickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613211F7B442800275493 /* TickerTests.swift */; };
 		DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813901F7A165F004C1424 /* AppDelegate.swift */; };
 		DCF813931F7A165F004C1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* ViewController.swift */; };
 		DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF813941F7A165F004C1424 /* Assets.xcassets */; };
@@ -79,6 +84,11 @@
 		DCE613091F7B2A5700275493 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		DCE6130B1F7B2D9A00275493 /* ProductStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStore.swift; sourceTree = "<group>"; };
 		DCE6130D1F7B302300275493 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		DCE6130F1F7B323800275493 /* OrderBook.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OrderBook.json; sourceTree = "<group>"; };
+		DCE613151F7B333F00275493 /* Ticker.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ticker.json; sourceTree = "<group>"; };
+		DCE613181F7B33F000275493 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		DCE6131D1F7B40E100275493 /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
+		DCE613211F7B442800275493 /* TickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerTests.swift; sourceTree = "<group>"; };
 		DCF8138D1F7A165F004C1424 /* GDAXBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF813901F7A165F004C1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF813921F7A165F004C1424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,9 +176,8 @@
 		DC54CFC01F7A2F83004D04D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC54CFC11F7A2F98004D04D0 /* Product.swift */,
-				DCFB7FBC1F7A790E00062C9F /* ProductService.swift */,
-				DCE6130B1F7B2D9A00275493 /* ProductStore.swift */,
+				DCE613111F7B326900275493 /* Product */,
+				DCE613171F7B335C00275493 /* Product Ticker */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -176,12 +185,13 @@
 		DC54CFCA1F7A3093004D04D0 /* GDAX */ = {
 			isa = PBXGroup;
 			children = (
-				DCFB7FB71F7A37F800062C9F /* Utility */,
-				DCF813AE1F7A16A1004C1424 /* Networking */,
-				DC54CFC01F7A2F83004D04D0 /* Products */,
-				DCF813B81F7A1DEB004C1424 /* Currency */,
 				DC54CFCB1F7A3093004D04D0 /* GDAX.h */,
 				DC54CFCD1F7A3093004D04D0 /* GDAX.m */,
+				DCF813B81F7A1DEB004C1424 /* Currency */,
+				DCE6131A1F7B3F4500275493 /* Formatters */,
+				DCF813AE1F7A16A1004C1424 /* Networking */,
+				DC54CFC01F7A2F83004D04D0 /* Products */,
+				DCFB7FB71F7A37F800062C9F /* Utility */,
 			);
 			path = GDAX;
 			sourceTree = "<group>";
@@ -208,9 +218,52 @@
 		DCE613081F7B2A2D00275493 /* Product Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DCE613091F7B2A5700275493 /* ProductTests.swift */,
+				DCE613201F7B441B00275493 /* Product Ticker */,
+				DCE6131F1F7B441400275493 /* Product */,
 			);
 			path = "Product Tests";
+			sourceTree = "<group>";
+		};
+		DCE613111F7B326900275493 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				DC54CFC11F7A2F98004D04D0 /* Product.swift */,
+				DCFB7FBC1F7A790E00062C9F /* ProductService.swift */,
+				DCE6130B1F7B2D9A00275493 /* ProductStore.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		DCE613171F7B335C00275493 /* Product Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				DCE613181F7B33F000275493 /* Ticker.swift */,
+				DCE6131D1F7B40E100275493 /* TickerService.swift */,
+			);
+			path = "Product Ticker";
+			sourceTree = "<group>";
+		};
+		DCE6131A1F7B3F4500275493 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		DCE6131F1F7B441400275493 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				DCE613091F7B2A5700275493 /* ProductTests.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		DCE613201F7B441B00275493 /* Product Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				DCE613211F7B442800275493 /* TickerTests.swift */,
+			);
+			path = "Product Ticker";
 			sourceTree = "<group>";
 		};
 		DCF813841F7A165F004C1424 = {
@@ -275,6 +328,8 @@
 			children = (
 				DCF813B21F7A19B1004C1424 /* Currencies.json */,
 				DCFB7FBE1F7A798A00062C9F /* Products.json */,
+				DCE6130F1F7B323800275493 /* OrderBook.json */,
+				DCE613151F7B333F00275493 /* Ticker.json */,
 			);
 			path = "Networking Stubs";
 			sourceTree = "<group>";
@@ -448,8 +503,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE613161F7B333F00275493 /* Ticker.json in Resources */,
 				DC54CFEC1F7A34DB004D04D0 /* Currencies.json in Resources */,
 				DCFB7FBF1F7A798A00062C9F /* Products.json in Resources */,
+				DCE613101F7B323800275493 /* OrderBook.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +729,9 @@
 			files = (
 				DCFB7FB91F7A380300062C9F /* UserDefaultKeys.swift in Sources */,
 				DC54CFD21F7A30AB004D04D0 /* Currency.swift in Sources */,
+				DCE6131E1F7B40E100275493 /* TickerService.swift in Sources */,
 				DC54CFCE1F7A3093004D04D0 /* GDAX.m in Sources */,
+				DCE613191F7B33F000275493 /* Ticker.swift in Sources */,
 				DCE6130C1F7B2D9A00275493 /* ProductStore.swift in Sources */,
 				DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */,
 				DCE6130E1F7B302300275493 /* NetworkingError.swift in Sources */,
@@ -692,6 +751,7 @@
 			files = (
 				DC54CFE71F7A31F6004D04D0 /* CurrencyTests.swift in Sources */,
 				DCE6130A1F7B2A5700275493 /* ProductTests.swift in Sources */,
+				DCE613221F7B442800275493 /* TickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,7 +24,7 @@ extension Service {
                 let currencies = try? decoder.decode([T].self, from: response.data)
                 callback(currencies, nil)
             case .failure(_):
-                callback(nil, NetworkingError.failedToFetch)
+                callback(nil, .failedToFetch)
             }
         }
     }
