@@ -10,4 +10,5 @@ import Foundation
 
 enum UserDefaultKeys {
     static let currencies = "stored_currencies"
+    static let products = "stored_products"
 }

@@ -19,10 +19,12 @@
 		DC54CFD51F7A30DE004D04D0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFC11F7A2F98004D04D0 /* Product.swift */; };
 		DC54CFD61F7A3188004D04D0 /* GDAXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813AF1F7A16F4004C1424 /* GDAXService.swift */; };
 		DC54CFD71F7A318B004D04D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813B41F7A1AF5004C1424 /* Networking.swift */; };
-		DC54CFDF1F7A31F0004D04D0 /* GDAXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */; };
 		DC54CFE11F7A31F0004D04D0 /* libGDAX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC54CFC91F7A3092004D04D0 /* libGDAX.dylib */; };
 		DC54CFE71F7A31F6004D04D0 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */; };
 		DC54CFEC1F7A34DB004D04D0 /* Currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF813B21F7A19B1004C1424 /* Currencies.json */; };
+		DCE613061F7B14C700275493 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613051F7B14C700275493 /* Service.swift */; };
+		DCE6130A1F7B2A5700275493 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613091F7B2A5700275493 /* ProductTests.swift */; };
+		DCE6130C1F7B2D9A00275493 /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE6130B1F7B2D9A00275493 /* ProductStore.swift */; };
 		DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813901F7A165F004C1424 /* AppDelegate.swift */; };
 		DCF813931F7A165F004C1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* ViewController.swift */; };
 		DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF813941F7A165F004C1424 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */; };
 		DCFB7FB91F7A380300062C9F /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7FB81F7A380300062C9F /* UserDefaultKeys.swift */; };
 		DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7FBA1F7A399200062C9F /* Store.swift */; };
+		DCFB7FBD1F7A790E00062C9F /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7FBC1F7A790E00062C9F /* ProductService.swift */; };
+		DCFB7FBF1F7A798A00062C9F /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = DCFB7FBE1F7A798A00062C9F /* Products.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +73,10 @@
 		DC54CFCB1F7A3093004D04D0 /* GDAX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDAX.h; sourceTree = "<group>"; };
 		DC54CFCD1F7A3093004D04D0 /* GDAX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDAX.m; sourceTree = "<group>"; };
 		DC54CFDC1F7A31F0004D04D0 /* GDAXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDAXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDAXTests.swift; sourceTree = "<group>"; };
 		DC54CFE01F7A31F0004D04D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE613051F7B14C700275493 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DCE613091F7B2A5700275493 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		DCE6130B1F7B2D9A00275493 /* ProductStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStore.swift; sourceTree = "<group>"; };
 		DCF8138D1F7A165F004C1424 /* GDAXBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF813901F7A165F004C1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF813921F7A165F004C1424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 		DCF813B91F7A1E04004C1424 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		DCFB7FB81F7A380300062C9F /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		DCFB7FBA1F7A399200062C9F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DCFB7FBC1F7A790E00062C9F /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		DCFB7FBE1F7A798A00062C9F /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,12 +161,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC54CFC01F7A2F83004D04D0 /* Exchanges */ = {
+		DC54CFC01F7A2F83004D04D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				DC54CFC11F7A2F98004D04D0 /* Product.swift */,
+				DCFB7FBC1F7A790E00062C9F /* ProductService.swift */,
+				DCE6130B1F7B2D9A00275493 /* ProductStore.swift */,
 			);
-			path = Exchanges;
+			path = Products;
 			sourceTree = "<group>";
 		};
 		DC54CFCA1F7A3093004D04D0 /* GDAX */ = {
@@ -166,7 +176,7 @@
 			children = (
 				DCFB7FB71F7A37F800062C9F /* Utility */,
 				DCF813AE1F7A16A1004C1424 /* Networking */,
-				DC54CFC01F7A2F83004D04D0 /* Exchanges */,
+				DC54CFC01F7A2F83004D04D0 /* Products */,
 				DCF813B81F7A1DEB004C1424 /* Currency */,
 				DC54CFCB1F7A3093004D04D0 /* GDAX.h */,
 				DC54CFCD1F7A3093004D04D0 /* GDAX.m */,
@@ -177,12 +187,28 @@
 		DC54CFDD1F7A31F0004D04D0 /* GDAXTests */ = {
 			isa = PBXGroup;
 			children = (
+				DCE613081F7B2A2D00275493 /* Product Tests */,
+				DCE613071F7B2A2600275493 /* Currency Tests */,
 				DCF813B11F7A1906004C1424 /* Networking Stubs */,
-				DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */,
-				DC54CFDE1F7A31F0004D04D0 /* GDAXTests.swift */,
 				DC54CFE01F7A31F0004D04D0 /* Info.plist */,
 			);
 			path = GDAXTests;
+			sourceTree = "<group>";
+		};
+		DCE613071F7B2A2600275493 /* Currency Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC54CFBD1F7A236E004D04D0 /* CurrencyTests.swift */,
+			);
+			path = "Currency Tests";
+			sourceTree = "<group>";
+		};
+		DCE613081F7B2A2D00275493 /* Product Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE613091F7B2A5700275493 /* ProductTests.swift */,
+			);
+			path = "Product Tests";
 			sourceTree = "<group>";
 		};
 		DCF813841F7A165F004C1424 = {
@@ -236,6 +262,7 @@
 			children = (
 				DCF813AF1F7A16F4004C1424 /* GDAXService.swift */,
 				DCF813B41F7A1AF5004C1424 /* Networking.swift */,
+				DCE613051F7B14C700275493 /* Service.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -244,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF813B21F7A19B1004C1424 /* Currencies.json */,
+				DCFB7FBE1F7A798A00062C9F /* Products.json */,
 			);
 			path = "Networking Stubs";
 			sourceTree = "<group>";
@@ -418,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC54CFEC1F7A34DB004D04D0 /* Currencies.json in Resources */,
+				DCFB7FBF1F7A798A00062C9F /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,12 +670,15 @@
 				DCFB7FB91F7A380300062C9F /* UserDefaultKeys.swift in Sources */,
 				DC54CFD21F7A30AB004D04D0 /* Currency.swift in Sources */,
 				DC54CFCE1F7A3093004D04D0 /* GDAX.m in Sources */,
+				DCE6130C1F7B2D9A00275493 /* ProductStore.swift in Sources */,
 				DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */,
 				DC54CFD51F7A30DE004D04D0 /* Product.swift in Sources */,
 				DC54CFD41F7A30B9004D04D0 /* CurrencyStore.swift in Sources */,
 				DC54CFD31F7A30B4004D04D0 /* CurrencyService.swift in Sources */,
 				DC54CFD61F7A3188004D04D0 /* GDAXService.swift in Sources */,
+				DCE613061F7B14C700275493 /* Service.swift in Sources */,
 				DC54CFD71F7A318B004D04D0 /* Networking.swift in Sources */,
+				DCFB7FBD1F7A790E00062C9F /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC54CFE71F7A31F6004D04D0 /* CurrencyTests.swift in Sources */,
-				DC54CFDF1F7A31F0004D04D0 /* GDAXTests.swift in Sources */,
+				DCE6130A1F7B2A5700275493 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

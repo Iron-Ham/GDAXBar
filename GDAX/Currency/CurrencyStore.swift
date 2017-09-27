@@ -10,7 +10,5 @@ import Foundation
 
 public enum CurrencyStore: Store {
     public typealias T = Currency
-    public static var key: String {
-        return UserDefaultKeys.currencies
-    }
+    public static var key: String { return UserDefaultKeys.currencies }
 }

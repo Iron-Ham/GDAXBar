@@ -8,20 +8,9 @@
 
 import Foundation
 
-public enum CurrencyService {
-    public static func fetch(callback: @escaping ([Currency]?, NetworkingError?) -> Void) {
-        let decoder = JSONDecoder()
-        let provider = OnlineProvider<GDAXService>()
-        _ = provider.request(.currencies) { result in
-            switch result {
-            case let .success(response):
-                let currencies = try? decoder.decode([Currency].self, from: response.data)
-                callback(currencies, nil)
-            case .failure(_):
-                callback(nil, NetworkingError.failedToFetch)
-            }
-        }
-    }
+public enum CurrencyService: Service {
+    typealias T = Currency
+    static var endpoint: GDAXService = .currencies
 }
 
 public enum NetworkingError: Error {

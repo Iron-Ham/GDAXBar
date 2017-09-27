@@ -12,7 +12,7 @@ public struct Currency: Codable {
     public let id: String
     public let name: String
     internal let _smallestDenomination: String
-    public var smallestDenomination: Double? { return Double(self._smallestDenomination) }
+    public var smallestDenomination: Double { return Double(self._smallestDenomination)! }
 
     init(id: String, name: String, smallestDenomination: String) {
         self.id = id
