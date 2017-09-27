@@ -12,14 +12,3 @@ public enum CurrencyService: Service {
     typealias T = Currency
     static var endpoint: GDAXService = .currencies
 }
-
-public enum NetworkingError: Error {
-    case failedToFetch
-
-    var localizedDescription: String {
-        switch self {
-        case .failedToFetch:
-            return "Failed to fetch data"
-        }
-    }
-}
