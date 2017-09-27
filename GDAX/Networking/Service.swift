@@ -41,8 +41,8 @@ extension SingleService {
         _ = provider.request(endpoint) { result in
             switch result {
             case let .success(response):
-                let currencies = try? decoder.decode(T.self, from: response.data)
-                callback(currencies, nil)
+                let value = try? decoder.decode(T.self, from: response.data)
+                callback(value, nil)
             case .failure(_):
                 callback(nil, .failedToFetch)
             }
@@ -59,8 +59,8 @@ extension MultiService {
         _ = provider.request(endpoint) { result in
             switch result {
             case let .success(response):
-                let currencies = try? decoder.decode([T].self, from: response.data)
-                callback(currencies, nil)
+                let values = try? decoder.decode([T].self, from: response.data)
+                callback(values, nil)
             case .failure(_):
                 callback(nil, .failedToFetch)
             }
