@@ -7,18 +7,8 @@
 //
 
 import Foundation
-public enum TickerService {
-    static func fetch(product: Product, callback: @escaping (Ticker?, NetworkingError?) -> Void) {
-        _ = provider.request(.ticker(product)) { result in
-            switch result {
-            case let .success(response):
-                let ticker = try? decoder.decode(Ticker.self, from: response.data)
-                callback(ticker, nil)
-            case .failure(_):
-                callback(nil, .failedToFetch)
-            }
-        }
-    }
+public enum TickerService: Service {
+    typealias T = Ticker
 }
 
 private var decoder = JSONDecoder()

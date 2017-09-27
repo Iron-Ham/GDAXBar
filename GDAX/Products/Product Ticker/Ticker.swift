@@ -35,8 +35,4 @@ public struct Ticker: Codable  {
     }
 }
 
-private let dateFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
-    return formatter
-}()
+private let dateFormatter = ZuluDateFormatter()

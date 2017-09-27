@@ -11,5 +11,5 @@ import Foundation
 enum ProductService: Service {
     typealias T = Product
 
-    static var endpoint: GDAXService = .products
+    static var defaultEndpoint: GDAXService = .products
 }

@@ -10,5 +10,5 @@ import Foundation
 
 public enum CurrencyService: Service {
     typealias T = Currency
-    static var endpoint: GDAXService = .currencies
+    static var defaultEndpoint: GDAXService = .currencies
 }

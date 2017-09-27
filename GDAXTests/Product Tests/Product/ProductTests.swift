@@ -33,10 +33,14 @@ class ProductTests: XCTestCase {
                 var product = products!.first!
                 XCTAssertNotNil(product.quoteCurrency)
                 XCTAssertNotNil(product.baseCurrency)
+                XCTAssertNotNil(product.baseMinSize)
+                XCTAssertNotNil(product.baseMaxSize)
+                XCTAssertNotNil(product.quoteIncrement)
                 dataRetreivalExpectation.fulfill()
             }
         }
 
         waitForExpectations(timeout: 1.0, handler: nil)
     }
+
 }

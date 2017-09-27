@@ -31,8 +31,10 @@
 		DCE613191F7B33F000275493 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613181F7B33F000275493 /* Ticker.swift */; };
 		DCE6131E1F7B40E100275493 /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE6131D1F7B40E100275493 /* TickerService.swift */; };
 		DCE613221F7B442800275493 /* TickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613211F7B442800275493 /* TickerTests.swift */; };
+		DCE613241F7C234900275493 /* ZuluDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613231F7C234900275493 /* ZuluDateFormatter.swift */; };
+		DCE613261F7C28AE00275493 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE613251F7C28AE00275493 /* EventMonitor.swift */; };
 		DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813901F7A165F004C1424 /* AppDelegate.swift */; };
-		DCF813931F7A165F004C1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* ViewController.swift */; };
+		DCF813931F7A165F004C1424 /* TickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813921F7A165F004C1424 /* TickerViewController.swift */; };
 		DCF813951F7A165F004C1424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF813941F7A165F004C1424 /* Assets.xcassets */; };
 		DCF813981F7A165F004C1424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF813961F7A165F004C1424 /* Main.storyboard */; };
 		DCF813A41F7A165F004C1424 /* GDAXBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813A31F7A165F004C1424 /* GDAXBarTests.swift */; };
@@ -89,9 +91,11 @@
 		DCE613181F7B33F000275493 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		DCE6131D1F7B40E100275493 /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
 		DCE613211F7B442800275493 /* TickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerTests.swift; sourceTree = "<group>"; };
+		DCE613231F7C234900275493 /* ZuluDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluDateFormatter.swift; sourceTree = "<group>"; };
+		DCE613251F7C28AE00275493 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		DCF8138D1F7A165F004C1424 /* GDAXBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF813901F7A165F004C1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCF813921F7A165F004C1424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCF813921F7A165F004C1424 /* TickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewController.swift; sourceTree = "<group>"; };
 		DCF813941F7A165F004C1424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF813971F7A165F004C1424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCF813991F7A165F004C1424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		DCE6131A1F7B3F4500275493 /* Formatters */ = {
 			isa = PBXGroup;
 			children = (
+				DCE613231F7C234900275493 /* ZuluDateFormatter.swift */,
 			);
 			path = Formatters;
 			sourceTree = "<group>";
@@ -294,11 +299,12 @@
 			isa = PBXGroup;
 			children = (
 				DCF813901F7A165F004C1424 /* AppDelegate.swift */,
-				DCF813921F7A165F004C1424 /* ViewController.swift */,
+				DCF813921F7A165F004C1424 /* TickerViewController.swift */,
 				DCF813941F7A165F004C1424 /* Assets.xcassets */,
 				DCF813961F7A165F004C1424 /* Main.storyboard */,
 				DCF813991F7A165F004C1424 /* Info.plist */,
 				DCF8139A1F7A165F004C1424 /* GDAXBar.entitlements */,
+				DCE613251F7C28AE00275493 /* EventMonitor.swift */,
 			);
 			path = GDAXBar;
 			sourceTree = "<group>";
@@ -731,6 +737,7 @@
 				DC54CFD21F7A30AB004D04D0 /* Currency.swift in Sources */,
 				DCE6131E1F7B40E100275493 /* TickerService.swift in Sources */,
 				DC54CFCE1F7A3093004D04D0 /* GDAX.m in Sources */,
+				DCE613241F7C234900275493 /* ZuluDateFormatter.swift in Sources */,
 				DCE613191F7B33F000275493 /* Ticker.swift in Sources */,
 				DCE6130C1F7B2D9A00275493 /* ProductStore.swift in Sources */,
 				DCFB7FBB1F7A399200062C9F /* Store.swift in Sources */,
@@ -759,7 +766,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF813931F7A165F004C1424 /* ViewController.swift in Sources */,
+				DCE613261F7C28AE00275493 /* EventMonitor.swift in Sources */,
+				DCF813931F7A165F004C1424 /* TickerViewController.swift in Sources */,
 				DCF813911F7A165F004C1424 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
