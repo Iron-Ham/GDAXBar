@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum CurrencyService: MultiService {
+public struct CurrencyService: MultiService {
     typealias T = Currency
-    static var defaultEndpoint: GDAXService = .currencies
+    var defaultEndpoint: GDAXService = .currencies
 }

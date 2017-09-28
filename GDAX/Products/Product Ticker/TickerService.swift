@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public enum TickerService: SingleService {
+public struct TickerService: SingleService {
     typealias T = Ticker
 }
 
